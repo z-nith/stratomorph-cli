@@ -1,0 +1,32 @@
+{
+  "name": "mov-to-gif-cli",
+  "version": "1.0.0",
+  "description": "A mov to gif cli tool wirtten with nodeJS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jmeza081/mov-to-gif-cli.git"
+  },
+  "keywords": [
+    "mov",
+    "gif",
+    "cli",
+    "nodejs",
+    "conversion",
+    "command-line-tools"
+  ],
+  "author": "Jesse Meza",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Jmeza081/mov-to-gif-cli/issues"
+  },
+  "homepage": "https://github.com/Jmeza081/mov-to-gif-cli#readme",
+  "dependencies": {
+    "chalk": "^2.4.1",
+    "inquirer": "^6.2.1",
+    "shelljs": "^0.8.3"
+  }
+}
