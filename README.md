@@ -1,4 +1,4 @@
-# mov-to-gif-cli
+# Stratomorph
 A NodeJS cli to convert `.mov` files to `.gif` by leveraging ffmpeg and gifscicle (So far)
 
 
