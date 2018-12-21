@@ -5,7 +5,7 @@
    <h2 align="center">Stratomorph CLI</h2>
 
   <p align="center">
-    A Node.js CLI gif generator
+    A Node.js CLI to retrieve color palettes from an image.
   </p>
  <p align='center'>
 [badge] - [badge] - [badge]
