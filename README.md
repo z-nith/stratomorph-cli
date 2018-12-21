@@ -1,22 +1,33 @@
+ <p align='center'>
+ <img src="https://user-images.githubusercontent.com/16481834/50317992-31d8d980-0484-11e9-83df-bcdd8104b95c.png" height=200/>
+ </p>
 
-<p textAlign='center'>
-<img src="https://user-images.githubusercontent.com/16481834/50317738-c3dfe280-0482-11e9-8423-74e6ca368dd3.png"/>
-</p>
+   <h2 align="center">Stratomorph</h2>
 
-[badge] [badge] [badge]
+  <p align="center">
+    A Node.js CLI gif generator
+  </p>
+ <p align='center'>
+[badge] - [badge] - [badge]
+ </p>
 
 
 ## Installation
+
 [Instructions]
 
 ## Motivation
+
 [Why a cli in node]
 
 ## Basic Usage
+
 sample commands
 
 ## Documentation
+
 Link to github pages
 
 ## Contributing
+
 See Links
