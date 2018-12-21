@@ -1,6 +1,6 @@
 
 <p textAlign='center'>
-<img src="https://user-images.githubusercontent.com/16481834/50317584-f806d380-0481-11e9-9021-92cf013f2b9e.png"/>
+<img src="https://user-images.githubusercontent.com/16481834/50317738-c3dfe280-0482-11e9-8423-74e6ca368dd3.png"/>
 </p>
 
 [badge] [badge] [badge]
