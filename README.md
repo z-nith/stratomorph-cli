@@ -1,5 +1,9 @@
+# Stratomorph
 [badge] [badge] [badge]
-![stratomorph_banner](https://user-images.githubusercontent.com/16481834/50310973-43f94e80-0469-11e9-94bf-678a8fc31a06.png)
+<p textAlign='center'>
+<img src="https://user-images.githubusercontent.com/16481834/50317584-f806d380-0481-11e9-9021-92cf013f2b9e.png"/>
+</p>
+
 
 ## Installation
 [Instructions]
