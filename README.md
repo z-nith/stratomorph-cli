@@ -10,7 +10,7 @@
 <h2 align="center">Stratomorph CLI</h2>
 
 <p align="center">
-  🌄 A Node.js CLI to retrieve color palettes from an image 🌄
+  🌄  A Node.js CLI to retrieve color palettes from an image 🌄
   <br />
   Give an image ➡ get a nicely formatted color palette in html. It's that simple! 🎨
 </p>
@@ -46,6 +46,8 @@ Link to github pages
 See Links
 
 ## About
-Built with 💪🏽 & the following libraries
+Built with 💪🏽  & the following libraries
 - [gluegun](https://github.com/infinitered/gluegun/) - Build your CLI in Node.js
 - [image-js](https://www.npmjs.com/package/image-js) - Manipulate, analyze and process images in Javascript
+- [rgbquant](https://github.com/leeoniya/RgbQuant.js) - Quantify colors found in an image by leveraging the [Median Cut Algorithm](https://en.wikipedia.org/wiki/Median_cut)
+- [colo](https://github.com/Qix-/color) - Manipulate colors using Javascript
