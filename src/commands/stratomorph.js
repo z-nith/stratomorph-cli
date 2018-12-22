@@ -2,8 +2,8 @@
 module.exports = {
   name: 'stratomorph',
   run: async toolbox => {
-    const { print } = toolbox
+    const { print, colorExtractor } = toolbox
+    colorExtractor();
 
-    print.info('Welcome to your CLI')
   }
 }
