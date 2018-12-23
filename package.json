@@ -23,9 +23,9 @@
   ],
   "license": "MIT",
   "dependencies": {
+    "canvas": "^2.2.0",
     "color": "^3.1.0",
     "gluegun": "next",
-    "image-js": "^0.21.4",
     "rgbquant": "^1.1.2"
   },
   "devDependencies": {
