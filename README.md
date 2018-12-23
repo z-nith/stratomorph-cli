@@ -24,19 +24,18 @@
     <a href="https://github.com/Jmeza081/stratomorph-cli/blob/master/docs/commands.md">Request a Feature</a>
 </p>
 
-
 ## Installation
 
 [Instructions]
 
 ## Features
+
 - Input an image file, get a color palette `.html`
 - Choose to order colors based on luminosity
 - Select the number of colors returned as a palette.
 - Tweak the returned colors' brightness and contrast
 - Choose color model returned by cli as `rgb`, `hex`, `cmyk`
 - Get the color palette returned as a `.json` object
-
 
 ## Basic Usage
 
@@ -51,7 +50,9 @@ Link to github pages
 See Links
 
 ## About
+
 Built with 💪🏽 & the following libraries
+
 - [gluegun](https://github.com/infinitered/gluegun/) - Build your CLI in Node.js
 - [canvas](https://www.npmjs.com/package/canvas) - A Node.JS port of Canvas to build the necessary `imageData` used by CLI.
 - [rgbquant](https://github.com/leeoniya/RgbQuant.js) - Quantify colors found in an image by leveraging the [Median Cut Algorithm](https://en.wikipedia.org/wiki/Median_cut)
