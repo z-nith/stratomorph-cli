@@ -1,7 +1,4 @@
-var fs = require('fs'),
-  Canvas = require('canvas'),
-  Image = Canvas.Image,
-  RgbQuant = require('rgbquant')
+
 
 var opts = {
   colors: 16, // desired palette size
@@ -23,27 +20,12 @@ var opts = {
 // add your CLI-specific functionality here, which will then be accessible
 // to your commands
 module.exports = toolbox => {
-  toolbox.colorExtractor = async () => {
-    var imgPath = './sample_images/sample.jpg'
+  toolbox.colorExtractor = async (imageCanv) => {
+    RgbQuant = require('rgbquant');
 
-    fs.readFile(imgPath, function(err, data) {
-      let img
-      let can
-      let ctx
-      let q
-      let pal
-
-      img = new Image()
-      img.src = data
-
-      can = Canvas.createCanvas(img.width, img.height)
-      ctx = can.getContext('2d')
-      ctx.drawImage(img, 0, 0, img.width, img.height)
-
-      q = new RgbQuant(opts);
-      q.sample(can)
-      pal = q.palette(true)
-      console.log(pal)
-    })
+    q = new RgbQuant(opts);
+    q.sample(imageCanv)
+    //pal = q.palette(true)
+    //console.log(pal)
   }
 }
