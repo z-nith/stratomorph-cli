@@ -1,4 +1,4 @@
-![](https://img.shields.io/github/issues-raw/jmeza081/stratomorph-cli.svg) ![](https://img.shields.io/github/license/jmeza081/stratomorph-cli.svg) [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier) ![](https://img.shields.io/github/stars/jmeza081/stratomorph-cli.svg?label=Stars&style=social)
+![](https://img.shields.io/github/issues-raw/jmeza081/stratomorph-cli.svg?style=flat-square&colorB=red) ![](https://img.shields.io/github/license/jmeza081/stratomorph-cli.svg?style=flat-square&colorB=blue) [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square&colorB=blue)](https://github.com/prettier/prettier) ![](https://img.shields.io/github/stars/jmeza081/stratomorph-cli.svg?label=Stars&style=flat-square&colorB=red)
 
 <p align="center">
   <img
