@@ -1,22 +1,56 @@
 const { print } = require('gluegun/print');
-const formatColorPalette = require('../../helpers/color_formatter');
+const Color = require('color');
+const chalk = require('chalk');
+
+/**
+ * Digests the raw color palette output in form [[r1, g1, b1], [r2, g2, b2], ...]
+ * and maps over each color array to build an color profile for each row in the
+ * resulting table.
+ *
+ * If the user's terminal supports True Color (16 mil colors), we dynamically
+ * color the first column the same color as the quantified color.
+ *
+ * @param {Array} rawColorPalette
+ * @returns Array row of color profile
+ */
+const buildTableRows = (rawColorPalette) => {
+    let hasTrueColorSupport = chalk.supportsColor.has16m;
+
+    if (hasTrueColorSupport) {
+        print.info('This terminal has TrueColor support.');
+    }
+
+    return rawColorPalette.map((colorArray) => {
+        // Build color object from quantified color
+        let color = Color.rgb(colorArray);
+
+        // Dynamically chalk background color of returned string
+        // based on True Color Support.
+        let rgb = color.rgb().object();
+        let rbgString = hasTrueColorSupport
+            ? chalk.bgRgb(rgb.r, rgb.g, rgb.b)(color.rgb().string())
+            : color.rgb().string();
+
+        let hex = color.hex();
+
+        let cmyk = color
+            .cmyk()
+            .round()
+            .string();
+
+        return [rbgString, hex, cmyk];
+    });
+};
 
 /**
  * Prints a table output of the color palette from the image input.
- * @param {string} imagePath
+ * @param {Array} rawColorPalette
  *
- * returns image buffer.
  */
-const printColorTable = (colorPalette) => {
-    let formattedColors = formatColorPalette(colorPalette);
+const printColorTable = (rawColorPalette) => {
+    let formattedColors = buildTableRows(rawColorPalette);
 
-    print.table(
-        [
-            ['Raw rgb', 'Hex', 'CMQK'],
-            ...formattedColors
-        ],
-        { format: 'markdown' },
-    );
+    print.table([['Rgb', 'Hex', 'Cmyk'], ...formattedColors], { format: 'markdown' });
 };
 
 module.exports = printColorTable;
