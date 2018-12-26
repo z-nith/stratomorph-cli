@@ -1,9 +1,10 @@
-![](https://img.shields.io/github/issues-raw/jmeza081/stratomorph-cli.svg?style=flat-square&colorB=red) ![](https://img.shields.io/github/license/jmeza081/stratomorph-cli.svg?style=flat-square&colorB=blue) [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square&colorB=blue)](https://github.com/prettier/prettier) ![](https://img.shields.io/github/stars/jmeza081/stratomorph-cli.svg?label=Stars&style=flat-square&colorB=red)
+![](https://img.shields.io/github/issues-raw/jmeza081/stratomorph-cli.svg?style=flat-square&colorB=0b2636) ![](https://img.shields.io/github/license/jmeza081/stratomorph-cli.svg?style=flat-square&colorB=113f52) [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square&colorB=113f52)](https://github.com/prettier/prettier) ![](https://img.shields.io/github/stars/jmeza081/stratomorph-cli.svg?label=Stars&style=flat-square&colorB=d74b4b)
+![](https://img.shields.io/badge/Min%20Node%20Version-v7.6%2B-%23185f73.svg?style=flat-square)
 
 <p align="center">
   <img
-    src="https://user-images.githubusercontent.com/16481834/50317992-31d8d980-0484-11e9-83df-bcdd8104b95c.png"
-    height="200"
+    src="https://user-images.githubusercontent.com/16481834/50455190-1bae9b80-0912-11e9-9a7b-1730ab3ba187.png"
+    height="300"
   />
 </p>
 
