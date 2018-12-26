@@ -1,29 +1,21 @@
-![](https://img.shields.io/github/issues-raw/jmeza081/stratomorph-cli.svg?style=flat-square&colorB=0b2636) ![](https://img.shields.io/github/license/jmeza081/stratomorph-cli.svg?style=flat-square&colorB=113f52) [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square&colorB=113f52)](https://github.com/prettier/prettier) ![](https://img.shields.io/github/stars/jmeza081/stratomorph-cli.svg?label=Stars&style=flat-square&colorB=d74b4b)
-![](https://img.shields.io/badge/Min%20Node%20Version-v7.6%2B-%23185f73.svg?style=flat-square)
-
-<p align="center">
+<p align="left">
   <img
-    src="https://user-images.githubusercontent.com/16481834/50455190-1bae9b80-0912-11e9-9a7b-1730ab3ba187.png"
-    height="300"
+    src="https://user-images.githubusercontent.com/16481834/50459026-34787a80-092d-11e9-84d2-0311eb136604.png"
+    height="100"
   />
 </p>
 
-<h2 align="center">Stratomorph CLI</h2>
 
-<p align="center">
-  🌄  A Node.js CLI to retrieve color palettes from an image 🌄
-  <br />
-  Give an image ➡ get a nicely formatted color palette in html. It's that simple! 🎨
-</p>
-<p align="center">
-    <a href="https://github.com/Jmeza081/stratomorph-cli/blob/master/docs/commands.md">
-      Docs
-    </a>
-    -
-    <a href="https://github.com/Jmeza081/stratomorph-cli/blob/master/docs/commands.md">Contribute</a>
-    -
-    <a href="https://github.com/Jmeza081/stratomorph-cli/blob/master/docs/commands.md">Request a Feature</a>
-</p>
+![](https://img.shields.io/github/issues-raw/jmeza081/stratomorph-cli.svg?style=flat-square&colorB=0b2636) ![](https://img.shields.io/github/license/jmeza081/stratomorph-cli.svg?style=flat-square&colorB=113f52) [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square&colorB=113f52)](https://github.com/prettier/prettier) ![](https://img.shields.io/github/stars/jmeza081/stratomorph-cli.svg?label=Stars&style=flat-square&colorB=d74b4b)
+![](https://img.shields.io/badge/Min%20Node%20Version-v7.6%2B-%23185f73.svg?style=flat-square)
+
+
+A Node.js CLI to retrieve color palettes from an image 🌄
+Give an image ➡ get a nicely formatted color palette in html. It's that simple! 🎨
+- [Docs](https://github.com/Jmeza081/stratomorph-cli/blob/master/docs/commands.md)
+- [Contribute](https://github.com/Jmeza081/stratomorph-cli#contributing)
+- [Request a Feature](https://github.com/Jmeza081/stratomorph-cli/issues/new)
+
 
 ## Installation
 
