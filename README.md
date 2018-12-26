@@ -5,13 +5,17 @@
   />
 </p>
 
+---
+![](https://img.shields.io/badge/min%20node%20version-v7.6%2B-%185f73.svg?style=flat-square)
+[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square&colorB=185f73)](https://github.com/prettier/prettier)
+![](https://img.shields.io/github/stars/jmeza081/stratomorph-cli.svg?label=Stars&style=flat-square&colorB=d74b4b)
+![](https://img.shields.io/github/issues-raw/jmeza081/stratomorph-cli.svg?style=flat-square&colorB=185f73)
+![https://github.com/Jmeza081/stratomorph-cli/blob/master/LICENSE](https://img.shields.io/badge/license-MIT-d74b4b.svg?style=flat-square)
 
-![](https://img.shields.io/github/issues-raw/jmeza081/stratomorph-cli.svg?style=flat-square&colorB=0b2636) ![](https://img.shields.io/github/license/jmeza081/stratomorph-cli.svg?style=flat-square&colorB=113f52) [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square&colorB=113f52)](https://github.com/prettier/prettier) ![](https://img.shields.io/github/stars/jmeza081/stratomorph-cli.svg?label=Stars&style=flat-square&colorB=d74b4b)
-![](https://img.shields.io/badge/Min%20Node%20Version-v7.6%2B-%23185f73.svg?style=flat-square)
 
+Stratomorph is a Node.js CLI color quantifier.
 
-A Node.js CLI to retrieve color palettes from an image 🌄
-Give an image ➡ get a nicely formatted color palette in html. It's that simple! 🎨
+Give an image 🌄 . Get a nicely formatted color palette. It's that simple! 🎨
 - [Docs](https://github.com/Jmeza081/stratomorph-cli/blob/master/docs/commands.md)
 - [Contribute](https://github.com/Jmeza081/stratomorph-cli#contributing)
 - [Request a Feature](https://github.com/Jmeza081/stratomorph-cli/issues/new)
