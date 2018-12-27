@@ -43,8 +43,12 @@ sample commands
 Link to github pages
 
 ## Contributing
-
-See Links
+**ATTN: NOT PUBLISHED YET**
+```
+$ yarn install [packageName]
+$ yarn link
+$ stratomorph
+```
 
 ## About
 
