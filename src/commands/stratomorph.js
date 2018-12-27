@@ -1,8 +1,8 @@
 module.exports = {
-    name: 'stratomorph',
+    name: 'htmlify',
     run: async (toolbox) => {
-        let dummyPath = './sample_images/sample.jpg';
-        const { print, colorExtractor, imagePrimer, paletteReporter } = toolbox;
+        let dummyPath = './sample_images/sample2.jpg';
+        const { print, colorQuantifier, imagePrimer, paletteReporter } = toolbox;
         const chalk = require('chalk');
 
         const spinner = print.spin('Loading Image');
@@ -11,7 +11,7 @@ module.exports = {
         let imageCanvas = await imagePrimer.buildCanvas(imageBuffer);
         spinner.succeed('Image Canvas Built. Analyzing Image...');
 
-        let colorPalette = await colorExtractor(imageCanvas);
+        let colorPalette = await colorQuantifier(imageCanvas);
         spinner.succeed('🌄 Analysis Complete. Building Color Palette...');
 
         spinner.stopAndPersist({ symbol: '🎨', text: 'Color Palette Ready!' });
