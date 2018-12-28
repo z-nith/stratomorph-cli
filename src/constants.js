@@ -15,4 +15,8 @@ var QUANTIFIER_CONFIG = {
     colorDist: 'euclidean' // method used to determine color distance, can also be "manhattan"
 }
 
-module.exports = {QUANTIFIER_CONFIG};
+var USAGE_STRINGS = {
+    htmlify: 'stratomorph htmlify (<image-file-path> | <image-url>) [-o <path> | --output=<path>] [--tablify | -t] [--colorModels <modelName>...] [--paletteCount=<NumberOfColorsDesired>]'
+};
+
+module.exports = {QUANTIFIER_CONFIG, USAGE_STRINGS};
