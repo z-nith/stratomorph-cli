@@ -27,7 +27,8 @@
     "chalk": "^2.4.1",
     "color": "^3.1.0",
     "gluegun": "next",
-    "rgbquant": "^1.1.2"
+    "rgbquant": "^1.1.2",
+    "validator": "^10.10.0"
   },
   "devDependencies": {
     "babel-eslint": "^10.0.1",
