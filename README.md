@@ -58,3 +58,4 @@ Built with 💪🏽 & the following libraries
 - [canvas](https://www.npmjs.com/package/canvas) - A Node.JS port of Canvas to build the necessary `imageData` used by CLI.
 - [rgbquant](https://github.com/leeoniya/RgbQuant.js) - Quantify colors found in an image by leveraging the [Median Cut Algorithm](https://en.wikipedia.org/wiki/Median_cut)
 - [color](https://github.com/Qix-/color) - Manipulate colors using Javascript
+- [validator](https://github.com/chriso/validator.js) - To sanitize and sanity-check user input
