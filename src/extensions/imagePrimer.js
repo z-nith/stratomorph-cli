@@ -7,8 +7,11 @@
  * 2. Using Loaded image, build a Canvas instance that can digested by
  *    Image Quantifier algorithm.
  */
-const { filesystem } = require('gluegun/filesystem');
-const { ImgSourceNotFoundError } = require('../lib/errorClasses');
+
+const {
+    ImgSourceNotFoundError,
+    networkImageFailedToLoadError,
+} = require('../lib/errorClasses');
 
 /**
  * Builds a Canvas object from the loaded image buffer
@@ -17,7 +20,7 @@ const { ImgSourceNotFoundError } = require('../lib/errorClasses');
  * returns canvas object
  */
 const buildCanvas = (image) => {
-    const Canvas = require('canvas');
+    let Canvas = require('canvas');
 
     let canvas = Canvas.createCanvas(image.width, image.height);
     let context = canvas.getContext('2d');
@@ -33,14 +36,16 @@ const buildCanvas = (image) => {
  */
 
 /**
- * Reads an image from the local file system as a buffer
+ * Reads an image from the local file system as a buffer. If the file is not
+ * found or the source fails to load, throw a new custom error.
  * @param {string} imagePath
  *
  * returns image buffer.
  */
 const loadImage = (imagePath) => {
-    const Canvas = require('canvas');
-    const Image = Canvas.Image;
+    let Canvas = require('canvas');
+    let { filesystem } = require('gluegun/filesystem');
+    let Image = Canvas.Image;
     let img = new Image();
 
     let imageBuffer = filesystem.read(imagePath, 'buffer');
@@ -55,9 +60,26 @@ const loadImage = (imagePath) => {
     return img;
 };
 
+/**
+ * Loads an image from uri directly as an image canvas instance
+ * @param {*} imageUri
+ */
+const loadNetworkImage = async (imageUri) => {
+    let { loadImage } = require('canvas');
+    try {
+        const myimg = await loadImage(imageUri);
+        return myimg;
+    } catch (err) {
+        throw new networkImageFailedToLoadError(
+            `Unable find image at uri ${imageUri}. Additional info: ${err}`,
+        );
+    }
+};
+
 module.exports = async (toolbox) => {
     toolbox.imagePrimer = {
         loadImage,
         buildCanvas,
+        loadNetworkImage,
     };
 };
