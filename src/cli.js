@@ -1,4 +1,5 @@
 const { build } = require('gluegun')
+const version = require('./commands/version');
 
 /**
  * Create the cli and kick it off
@@ -10,7 +11,7 @@ async function run (argv) {
     .src(__dirname)
     .plugins('./node_modules', { matching: 'stratomorph-*', hidden: true })
     .help() // provides default for help, h, --help, -h
-    .version() // provides default for version, v, --version, -v
+    .version(version)
     .create()
 
   // and run it
