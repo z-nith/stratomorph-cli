@@ -26,7 +26,8 @@
     "canvas": "^2.2.0",
     "chalk": "^2.4.1",
     "color": "^3.1.0",
-    "gluegun": "next",
+    "figlet": "^1.2.1",
+    "gluegun": "^2.0.5",
     "rgbquant": "^1.1.2",
     "validator": "^10.10.0"
   },
