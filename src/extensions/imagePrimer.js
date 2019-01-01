@@ -42,7 +42,7 @@ const buildCanvas = (image) => {
  *
  * returns image buffer.
  */
-const loadImage = (imagePath) => {
+const loadFilesystemImage = (imagePath) => {
     let Canvas = require('canvas');
     let { filesystem } = require('gluegun/filesystem');
     let Image = Canvas.Image;
@@ -76,10 +76,25 @@ const loadNetworkImage = async (imageUri) => {
     }
 };
 
+/**
+ * Interpolates the type of image src we are dealing with. If the input is of
+ * type url, we load the image from the network. Otherwise we attempt to load
+ * the image from the local file system.
+ * @param {*} unknownImgSrc
+ */
+const loadImage = (unknownImgSrc) => {
+    let isURL = require('validator/lib/isURL');
+
+    if (isURL(unknownImgSrc)) {
+        return loadNetworkImage(unknownImgSrc);
+    } else {
+        return loadFilesystemImage(unknownImgSrc);
+    }
+};
+
 module.exports = async (toolbox) => {
     toolbox.imagePrimer = {
-        loadImage,
         buildCanvas,
-        loadNetworkImage,
+        loadImage,
     };
 };
